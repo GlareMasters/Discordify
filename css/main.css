@@ -134,16 +134,23 @@
 	background-color: #282828 !important;
 }
 
-.user-popout .header {
-	background: #1DB954 !important;
+.user-popout .header, #user-profile-modal .header {
+	background: #1C1C1C !important;
 }
 
-.user-popout .avatar-wrapper .avatar-popout {
-	border: 4px solid #179443 !important;
-	background-color: #179443 !important;
+.user-popout .avatar-wrapper .avatar-popout, #user-profile-modal .avatar-profile {
+	border: 4px solid #181818 !important;
+	background-color: #141414 !important;
+}
+
+#user-profile-modal .avatar-profile .status {border: 4px solid #181818 !important;}
+
+.user-popout .avatar-wrapper .activity {
+	margin-bottom: 3px;
 }
 
 .user-popout .body, .user-popout .footer {
+	border-color: #1C1C1C;
 	background: #282828;
 }
 
@@ -169,7 +176,6 @@
 .sub-header .btn,
 .btn.add-friend,
 .btn-help:hover,
-#user-profile-modal .header,
 #bd-customcss-detach-container #bd-customcss-detach-controls-buttons button,
 #friends .btn,
 #friends .btn:hover,
