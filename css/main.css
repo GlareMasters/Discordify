@@ -125,6 +125,10 @@
 	border-left: 0px !important;
 }
 
+.message-group.is-local-bot-message {
+	box-shadow: none !important;
+}
+
 .message-group:hover {
 	background-color: #282828 !important;
 }
@@ -168,7 +172,8 @@
 #bd-customcss-detach-container #bd-customcss-detach-controls-buttons button,
 #friends .btn,
 #friends .btn:hover,
-.upload-modal {
+.upload-modal,
+.upload-drop-modal .bgScale {
 	background: #1DB954 !important;
 	border: 0px !important;
 }
@@ -182,7 +187,7 @@
 	border: 2px solid #1aa64b;
 }
 
-.upload-modal .inner {
+.upload-modal .inner, .upload-drop-modal .inner {
 	border: 2px dashed #8edca9;
 }
 
@@ -397,6 +402,10 @@
 	border:none !important;
 }
 
+.channel-textarea-autocomplete ul li {
+	color: rgba(255,255,255,.6) !important;
+}
+
 .channel-textarea-autocomplete ul li.active {
 	background: #4D4D4D !important;
 }
@@ -470,7 +479,7 @@
 }
 
 .callout-backdrop {
-	background: transparent !important;
+	background: rgba(0,0,0,0.3) !important;
 }
 
 .modal {
@@ -676,6 +685,11 @@ div.control-group .shortcut-recorder input[type=text] {
 
 .tab-bar-item:before {
 	border-left: 0px !important;
+}
+
+.chat .has-more button {
+	background: #282828 !important;
+	color: white;
 }
 
 .chat>.content .messages .divider span {
