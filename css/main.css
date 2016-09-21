@@ -212,9 +212,11 @@
 	background-color: #282828;
 }
 
-.need-help-modal a {color: #1ED760;}
+.need-help-modal a,
+.guild-settings-modal-overview a {color: #1ED760 !important;}
 
-.need-help-modal a:hover {color: #1DB954;}
+.need-help-modal a:hover,
+.guild-settings-modal-overview a:hover {color: #1DB954 !important;}
 
 .avatar-uploader .avatar-uploader-inner {
 	background-color: white !important;
@@ -319,9 +321,19 @@
 	color: #1DB954 !important;
 }
 
-.markdown-modal {
+.markdown-modal,
+.region-select-modal,
+.region-select-modal .region-select-modal-header {
 	color: #FFF;
 	background-color: #181818 !important;
+}
+
+.region-select-modal .region-select-modal-option {
+	background-color: #1C1C1C !important;
+	border: 2px solid #1C1C1C;
+}
+.region-select-modal .region-select-modal-option:hover {
+	border-color: #1DB954 !important;
 }
 
 .change-log, .markdown-modal-footer {
@@ -419,7 +431,7 @@
 
 .search-bar .search-bar-inner {
 	background: transparent !important;
-	border: 0px;
+	border-bottom: 0px !important;
 }
 
 .search-bar input {
@@ -450,7 +462,7 @@
 	background-color: transparent;
 }
 
-.tooltip {
+.tooltip:not(.tooltip-error):not(.tooltip-success) {
 	background:#333333;
 	color:#828282;
 }
@@ -518,6 +530,10 @@
 .guild-settings-modal-members-footer {
 	background: #181818;
 	color: #FFF;
+}
+
+#settings-roles .roles {
+	border-right-color: #282828;
 }
 
 #settings-roles .roles, .selected-role .selected-role-inner {
@@ -588,8 +604,8 @@ div.control-group .shortcut-recorder input[type=text] {
 	border-bottom: 0px;
 }
 
-.form .control-group .has-value .Select-placeholder {
-	background-color: #181818;
+.form .control-group .Select-placeholder {
+	background-color: #333333;
 	color: #FFF;
 }
 
@@ -700,8 +716,13 @@ div.control-group .shortcut-recorder input[type=text] {
 }
 
 .chat>.content .messages .divider span {
-	background: #181818;
+	background: transparent;
 }
+
+.messages-wrapper .messages .divider:before {
+	background-color: transparent !important;
+}
+
 .messages-wrapper .messages .divider.divider-red span {
 	color: #1DB954 !important;
 }
@@ -883,6 +904,97 @@ div.control-group .shortcut-recorder input[type=text] {
 .context-menu .item:active {
 	background: #777777 !important;
 	border-radius: 0px !important;
+}
+
+.region-select button, .region-select-inner, .region-select:hover .region-select-inner, .region-select:hover button {
+	border-color: #141414 !important;
+	background: #1C1C1C !important;
+	color: white !important;
+}
+
+.form .control-groups.control-separator, .form .Select-control, .form .Select-placeholder {
+	border-color: #282828 !important;
+	border-radius: 0px !important;
+}
+
+.form .Select-control {
+	background-color: #333333 !important;
+}
+
+.form .Select-value {
+	color: #D2D2D2 !important;
+}
+
+.form .Select-option {
+	color: white !important;
+	background: #333333 !important;
+	border-radius: 0px;
+}
+
+.form .Select-menu-outer {
+	border: 0px !important;
+}
+
+.form .Select-option.is-focused {
+	background: #2d2d2d !important;
+}
+
+.guild-settings-modal-members .member-buttons .btn,
+.instant-invites .instant-invite-buttons .btn {
+	background: transparent !important;
+	border-radius: 24px;
+	color: white;
+	
+}
+
+.instant-invites .instant-invites-header, 
+.guild-settings-modal-integrations .guild-settings-modal-integrations-header, 
+.guild-settings-modal-members .guild-settings-modal-members-header,
+#settings-roles .roles header {
+	border-bottom: 1px solid #282828 !important;
+}
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p {
+	color: #2A2A2A !important;
+}
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations .integration-logos {
+	filter: invert(1);
+	-webkit-filter: invert(1);
+}
+
+.guild-settings-modal-members .guild-settings-modal-list .member,
+.guild-settings-modal-members .guild-settings-modal-members-footer {
+	border-top-color: #282828 !important;
+}
+
+.guild-settings-modal-members .guild-settings-modal-list .member .member-username,
+.instant-invites .instant-invites-list .instant-invite .show-channel .member {
+	color: #d2d2d2 !important;
+}
+
+.guild-settings-modal-members .guild-settings-modal-members-footer a {
+	color: #1ED760 !important;
+}
+
+#settings-roles .roles li:hover {
+	background: none !important;
+}
+
+#settings-roles .roles li.selected:before {
+	border-left: 4px solid #1ED760 !important;
+}
+
+.clipboard-input-inner {
+	background: none;
+	border: 0px;
+}
+.clipboard-input-inner input {
+	background: #282828 !important;
+}
+
+.clipboard-input-inner button {
+	background-color: #282828 !important;
 }
 
 .bd-g-table tbody tr,
