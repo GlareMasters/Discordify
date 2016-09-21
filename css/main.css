@@ -950,8 +950,13 @@ div.control-group .shortcut-recorder input[type=text] {
 .instant-invites .instant-invites-header, 
 .guild-settings-modal-integrations .guild-settings-modal-integrations-header, 
 .guild-settings-modal-members .guild-settings-modal-members-header,
-#settings-roles .roles header {
+#settings-roles .roles header,
+.channel-notification-settings {
 	border-bottom: 1px solid #282828 !important;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-list {
+	box-shadow: 0 -1px #282828 !important;
 }
 
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p {
