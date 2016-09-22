@@ -569,7 +569,7 @@ div.control-group .shortcut-recorder input[type=text] {color: #FFF !important;}
 div.control-group .shortcut-recorder input[type=text]:focus {border-radius: 0px !important;}
 
 .form .control-group input[type=email]:focus, .form .control-group input[type=password]:focus, .form .control-group input[type=text]:focus, .form .control-group textarea:focus {
-	border-bottom: 1px solid #282828;
+	border-bottom: 1px solid #181818;
 	color: #FFF;
 }
 
