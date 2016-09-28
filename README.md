@@ -21,8 +21,8 @@
 Note: The theme updates itself, so you only have to reload Discord at every update ;)
 
 #### **Previews:**
-![Preview-1](http://nirewen.s-ul.eu/gL0vmNBh.png)
+![Preview-1](http://nirewen.s-ul.eu/eAv6iGjb.png)
 
-![Preview-2](http://nirewen.s-ul.eu/t47xmAsd.png)
+![Preview-2](http://nirewen.s-ul.eu/JUij5BEr.png)
 
-![Preview-3](http://nirewen.s-ul.eu/ZcZR59Vw.png)
+![Preview-3](http://nirewen.s-ul.eu/Z6yfzwtg.png)
