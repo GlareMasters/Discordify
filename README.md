@@ -26,3 +26,6 @@ Note: The theme updates itself, so you only have to reload Discord at every upda
 ![Preview-2](http://nirewen.s-ul.eu/JUij5BEr.png)
 
 ![Preview-3](http://nirewen.s-ul.eu/Z6yfzwtg.png)
+
+![Preview-4](http://nirewen.s-ul.eu/cl07P761.png)
+([Stylish version](https://userstyles.org/styles/126680/discordify) only)
