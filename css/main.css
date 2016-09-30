@@ -52,9 +52,14 @@
 .alert.form.has-icon {background-image: url(https://imgh.us/.alert.form.has-icon.svg) !important;}
 .messages-popout .empty-placeholder .image {background-image: url(https://imgh.us/.messages-popout_.empty-placeholder_.image.svg) !important;}
 .icon.icon-file {background: url(https://imgh.us/.icon.icon-file.svg) no-repeat !important;}
+.icon.unknown {background: url(https://imgh.us/.icon.unknown.svg) no-repeat !important;}
+.icon.icon-file.unknown {background: url(https://imgh.us/.icon.icon-file.svg) no-repeat !important;}
 .icon.webcode, .icon.one {background: url(https://imgh.us/.icon.webcode.svg) !important;}
+.icon.icon-file.webcode {background: url(https://imgh.us/.icon.icon-file.webcode.svg) no-repeat !important;}
 .icon.code, .icon.two {background: url(https://imgh.us/.icon.code.svg) !important;}
+.icon.icon-file.code {background: url(https://imgh.us/.icon.icon-file.code.svg) no-repeat !important;}
 .icon.document, .icon.three {background: url(https://imgh.us/.icon.document.svg) !important;}
+.icon.icon-file.document {background: url(https://imgh.us/.icon.icon-file.document.svg) no-repeat !important;}
 .icon.exclamation {background-image: url(https://imgh.us/.icon.exclamation.svg) !important;}
 .icon.share {background-image: url(https://imgh.us/.icon.share.svg) !important;}
 .icon.apps {background-image: url(https://imgh.us/.icon.apps.svg) !important;}
