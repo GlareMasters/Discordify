@@ -8,15 +8,18 @@
 }
 
 .search-bar {background-color: #181818 !important;}
-.private-channels .search-bar {background-color: #282828 !important; box-shadow: none !important;}
+.private-channels .search-bar,
+.emoji-picker .search-bar {background-color: #282828 !important; box-shadow: none !important;}
 .search-bar .search-bar-inner {background-color: transparent !important;}
-
 .search-bar input {
 	background-color: #FFF !important;
 	color: black !important;
 	border-radius: 24px !important;
 }
-.search-bar-clear:before {background: #FFF !important;}
+.search-bar input::-webkit-input-placeholder {
+	color: rgba(0,0,0,.5) !important;
+}
+.search-bar-clear.active {background: #FFF !important;}
 
 .account {border-top: 0px !important;}
 
@@ -45,6 +48,7 @@
 
 .alert.form.has-icon:before {background-color: transparent !important;}
 .alert.form .form-inner h4 {color: #D2D2D2 !important;}
+.alert.form {min-height: 277px !important;}
 
 /*--SVG--*/
 
@@ -162,8 +166,6 @@
 #bd-customcss-detach-container #bd-customcss-detach-controls-buttons button,
 #friends .btn,
 #friends .btn:hover,
-.upload-modal,
-.upload-drop-modal .bgScale,
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:not(.selected) {
 	background: #1DB954 !important;
 	border: 0px !important;
@@ -171,10 +173,16 @@
 
 #friends .friends-header .tab-bar .tab-bar-item:not(.selected) {transition: all 200ms ease-in-out;}
 #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {background: rgba(0,0,0,0.2) !important;}
+#friends .friends-table .friends-row .friends-column-actions .friends-action {transition: background-color 200ms ease-in-out;background-color: rgba(0,0,0,0.05) !important;}
+#friends .friends-table .friends-row .friends-column-actions .friends-action:hover {background-color: rgba(0,0,0,0.3) !important;}
 
+.upload-modal,
+.upload-drop-modal .bgScale {
+	background: #15843c !important;
+}
 .upload-modal .footer, .upload-modal .footer .button, .upload-modal .footer .button span,
 .channel-textarea-guard button {
-	background-color: #179443 !important;
+	background-color: #10682f !important;
 	color: white;
 }
 
@@ -295,6 +303,10 @@
 .channel.channel-text:before,
 .private-channels .channel:not(.selected):before {border-left: 0px !important;}
 
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
+	left: -6px;
+}
+
 .messages-wrapper a,
 .messages-wrapper a:hover,
 .markdown-modal a,
@@ -377,7 +389,7 @@
 	background-color: transparent !important;
 }
 
-.bot-tag {background-color: #18AC4C;}
+.bot-tag {background-color: #15843c;}
 .message-group .avatar-large {left: 10px;}
 
 .chat .has-more button {
@@ -610,9 +622,9 @@
 .btn-primary {
 	border-radius: 30px !important;
 	background-color: #1db954 !important;
+	color: white !important;
 	border: 0px !important;
 	transition: none !important;
-	max-height: 40px !important;
 }
 
 .btn.red {
@@ -620,7 +632,6 @@
 	background-color: #f04747 !important;
 	border: 0px !important;
 	transition: none !important;
-	max-height: 40px !important;
 }
 
 .guild-settings-modal .member-buttons .btn.btn-danger,
@@ -714,10 +725,10 @@
 	color: #FFF;
 }
 
-#settings-roles .roles li.selected {background: none;}
+#settings-roles .roles li.selected {background: none; color: #d2d2d2;}
 #settings-roles .roles li.selected:before {width: 5px; background-color: transparent; color: #FFF;}
 #settings-roles .roles li:before {width: 0px; background-color: transparent; color: #FFF;}
-#settings-roles .roles li:hover {background-color: transparent;}
+#settings-roles .roles li:hover {background-color: transparent; cursor: pointer;}
 
 div.control-group .shortcut-recorder input[type=text] {color: #FFF !important;}
 
@@ -996,14 +1007,14 @@ img::before {
 
 /*---DEV---*/
 
-.avatar-small[style='background-image: url("https://cdn.discordapp.com/avatars/106915215592923136/bf367a120575250c1ff0900511bab760.jpg");']+.member-inner .member-username .member-username-inner:after,
-.avatar-large[style='background-image: url("https://cdn.discordapp.com/avatars/106915215592923136/bf367a120575250c1ff0900511bab760.jpg");']+.comment .username-wrapper .user-name:after {
+.avatar-small[style*="106915215592923136"]+.member-inner .member-username .member-username-inner:after,
+.avatar-large[style*="106915215592923136"]+.comment .username-wrapper .user-name:after {
     content: "DEV";
-    background: #18AC4C;
+    background: #15843c;
     margin-left: 5px;
     font-size: 10px;
     color: #fff;
-    padding: 1px 3px;
+    padding: 0px 3px;
     border-radius: 4px;
 }
 
@@ -1053,14 +1064,65 @@ img::before {
 
 .bd-minimal .channel.channel-text.selected:before,
 .bd-minimal .private-channels .channel.selected:before {border-left: 2px solid #1ED760 !important;}
+.bd-minimal .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
+	height: 4px;
+	width: 4px;
+	left: -2px;
+}
 
 .bd-minimal .friends-online {
 	transform: scale(0.8);
 	position: relative;
-	left: -16px;
 }
 
-.bd-minimal .guilds-wrapper .guilds .guild, .bd-minimal .guilds-wrapper .guilds .guild.selected {width: 20px !important;}
+.bd-minimal .channel-members {width: 185px !important;}
+
+.bd-minimal .channel-members .member .avatar-small {
+    width: 15px !important;
+    height: 15px !important;
+    background-size: 20px 20px;
+    z-index: 9;
+}
+
+.bd-minimal .channel-members .member .avatar-small:before {
+    z-index: 11;
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.bd-minimal .channel-members .member .avatar-small:after {
+    z-index: 10;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+	border-radius: 50%;
+}
+.bd-minimal .channel-members .avatar-small .status {z-index: 12 !important;}
+.bd-minimal .channel-members .member .avatar-small:hover:after {opacity: .9 !important;}
+.bd-minimal .channel-members .member .avatar-small:hover:before {border-color: white !important;}
+.bd-minimal .channel-members .member .avatar-small:hover {transform: scale(1.08);}
+.bd-minimal .channel-members .member .avatar-small:active {transform: scale(1) !important;}
+.bd-minimal .channel-members .member:hover > .avatar-small:before {border-color: grey;}
+.bd-minimal .channel-members .member:hover > .avatar-small:after {opacity: .9;}
+
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner, 
+.bd-minimal .guilds-wrapper .guilds .guild.selected .guild-inner, 
+.bd-minimal .guilds-wrapper .guilds .friends-icon {width: 20px !important;}
+.bd-minimal .guilds-wrapper .guilds .friends-icon {background-size: 20px 20px;}
+
+.bd-minimal .theme-dark .comment {border-left: 0px;}
 
 ul.bda-slist {
 	margin-top: 18px;
