@@ -283,26 +283,19 @@
 }
 
 .channel.channel-text.selected:before,
-.private-channels .channel.selected:before {
-	border-left: 4px solid #1ED760 !important;
-	height: 18px;
-	margin-top: 3%;
-}
-
 .channel.channel-text:hover:not(.selected):not(.unread):before,
-.private-channels .channel:hover:not(.selected):not(.unread):before {
+.channel.channel-text.selected:hover:before {
 	border-left: 4px solid #1ED760 !important;
 	height: 18px;
-	margin-top: 3%;
+	margin-top: 9px;
 }
 
-.channel.channel-text.selected:hover:before,
-.private-channels .channel.selected:hover:before {
+.private-channels .channel.selected:before,
+.private-channels .channel:not(.selected):hover:before {
+	margin-top: 12px;
 	border-left: 4px solid #1ED760 !important;
 	height: 18px;
-	margin-top: 3%;
 }
-
 .channel.channel-text.selected,
 .private-channels .channel.selected {background: none;}
 
@@ -339,17 +332,17 @@
 .form .control-group label a,
 .form .control-group label a:hover {color: #1ED760 !important;}
 
-.guilds-wrapper .guilds {background-color: #181818 !important;padding-bottom:85px;}
+.guilds {background-color: #181818 !important;}
 
 .guilds-add {border: 1px solid #535559;}
 .guilds-add:hover {border: 1px solid #FFF; color: #535559;}
 
-.account, .chat form {
+.account {
 	background: #282828; 
-	height: 70px; 
+	height: 92px; 
 	border-top: 1px solid #121212 !important;
 }
-.chat form {margin: 0;}
+.chat form {margin: 0;border-top: 1px solid #121212 !important;}
 .flex-spacer {background: #282828;}
 
 .private-channels .scroller, .guild-channels {background-color: #121212 !important;}
@@ -441,9 +434,9 @@
 
 .flex-wrapper {background: #282828 !important;}
 
-.typing {background: #282828 !important; bottom: 80%; border-top-right-radius: 3px;border-top-left-radius: 3px;}
+.typing {background: transparent !important;}
 
-.channel-textarea-inner {transform: translate(0, -6px);margin: 0 20px;}
+.channel-textarea-inner {margin: 0 20px;}
 
 .channel-textarea-inner, .quick-message, .note textarea:focus {
 	color: white !important;
