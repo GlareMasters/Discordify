@@ -21,6 +21,8 @@
 }
 .search-bar-clear.active {background: #FFF !important;}
 
+.chat .private-channel-call {background-color: #121212 !important;}
+
 .account .btn,
 #voice-connection .btn {
 	border-radius: 30px;
@@ -105,7 +107,9 @@
 	border: 3px solid #282828;
 }
 
-.scroller-wrap .scroller::-webkit-scrollbar {width: 16px;background: #121212;}
+.scroller-wrap .scroller::-webkit-scrollbar {width: 16px;}
+
+.messages-wrapper .scroller-wrap .scroller::-webkit-scrollbar {background: #121212;}
 
 .scroller-wrap .scroller::-webkit-scrollbar-thumb:hover {background-color: #404040 !important;}
 
@@ -333,17 +337,20 @@
 .form .control-group label a:hover {color: #1ED760 !important;}
 
 .guilds {background-color: #181818 !important;}
+.guilds-wrapper .guilds {padding-bottom: 85px;}
 
 .guilds-add {border: 1px solid #535559;}
 .guilds-add:hover {border: 1px solid #FFF; color: #535559;}
 
 .account {
 	background: #282828; 
-	height: 92px; 
+	height: 71px; 
+	margin-left: -80px;
+	width: 300px;
+	z-index: 9;
 	border-top: 1px solid #121212 !important;
 }
 .chat form {margin: 0;border-top: 1px solid #121212 !important;}
-.flex-spacer {background: #282828;}
 
 .private-channels .scroller, .guild-channels {background-color: #121212 !important;}
 
@@ -432,11 +439,15 @@
 .messages-wrapper .messages .divider.divider-red > div {background: #1DB954 !important;}
 .messages-wrapper, #friends {background-color: #181818 !important;}
 
-.flex-wrapper {background: #282828 !important;}
+.flex-wrapper,
+.chat .channel-textarea {background: #282828 !important; margin: 0;}
+.edit-container-inner .channel-textarea {background: transparent !important;}
+.edit-container-inner .channel-textarea-inner {margin: 0 !important;}
+.chat form {width: 77vw;z-index: 999}
 
-.typing {background: transparent !important;}
+.typing {background: transparent !important;height: 25px;z-index: 1000;bottom: -1px;}
 
-.channel-textarea-inner {margin: 0 20px;}
+.chat .channel-textarea-inner {margin: 4px 20px 25px 20px;}
 
 .channel-textarea-inner, .quick-message, .note textarea:focus {
 	color: white !important;
