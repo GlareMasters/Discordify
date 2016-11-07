@@ -533,7 +533,7 @@
 /*---MEMBER LIST---*/
 
 .channel-members-loading {display: none;}
-.channel-members {background-color: #121212 !important;}
+.channel-members {background-color: #121212 !important;padding-bottom: 85px;}
 .channel-members .member:hover {background: #181818 !important;}
 .channel-members .member.popout-open {background: #282828 !important;}
 
