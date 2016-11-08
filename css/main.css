@@ -440,10 +440,12 @@
 .messages-wrapper, #friends {background-color: #181818 !important;}
 
 .flex-wrapper,
-.chat .channel-textarea {background: #282828 !important; margin: 0;}
+.chat .channel-textarea {background: #282828 !important; margin: 0;opacity: 1;}
 .edit-container-inner .channel-textarea {background: transparent !important;}
 .edit-container-inner .channel-textarea-inner {margin: 0 !important;}
 .chat form {width: 77vw;z-index: 999}
+
+.channel-textarea.channel-textarea-disabled .channel-textarea-inner {opacity: 0.5;}
 
 .typing {background: transparent !important;height: 25px;z-index: 1000;bottom: -1px;}
 
