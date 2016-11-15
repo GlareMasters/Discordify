@@ -63,6 +63,8 @@
 .icon.icon-file.webcode {background: url(https://imgh.us/.icon.icon-file.webcode.svg) no-repeat !important;}
 .icon.code, .icon.two {background: url(https://imgh.us/.icon.code.svg) !important;}
 .icon.icon-file.code {background: url(https://imgh.us/.icon.icon-file.code.svg) no-repeat !important;}
+.icon.archive {background: url(https://imgh.us/.icon.archive.svg) !important;}
+.icon.icon-file.archive {background: url(https://imgh.us/.icon.icon-file.archive.svg) !important;}
 .icon.document, .icon.three {background: url(https://imgh.us/.icon.document.svg) !important;}
 .icon.icon-file.document {background: url(https://imgh.us/.icon.icon-file.document.svg) no-repeat !important;}
 .icon.exclamation {background-image: url(https://imgh.us/.icon.exclamation.svg) !important;}
@@ -212,7 +214,7 @@
 
 #voice-connection .btn-group {border: 0px;}
 
-.account .avatar-small {border: 1px solid grey;}
+.account .avatar-small {width: 48px; height: 48px; background-size: cover; border-radius: 0px;}
 
 .guilds-wrapper .guilds .guild .guild-inner:hover {
 	background: #18AC4C !important;
@@ -349,6 +351,7 @@
 	width: 300px;
 	z-index: 9;
 	border-top: 1px solid #121212 !important;
+	padding: 0 14px !important;
 }
 .chat form {margin: 0;border-top: 1px solid #121212 !important;}
 
@@ -404,6 +407,13 @@
 	background: #242424 !important;
 }
 
+.message-group .embed-wrapper .embed-color-pill {background-color: #282828;}
+
+.message-group .embed {
+	background-color: rgba(0,0,0,0.1) !important;
+	border-color: rgba(0,0,0,0.3) !important;
+}
+
 .message-group-blocked {
 	background: #181818 !important;
 	border-color: #3d3d3d !important;
@@ -443,7 +453,7 @@
 .chat .channel-textarea {background: #282828 !important; margin: 0;opacity: 1;}
 .edit-container-inner .channel-textarea {background: transparent !important;}
 .edit-container-inner .channel-textarea-inner {margin: 0 !important;}
-.chat form {width: 77vw;z-index: 999}
+.chat form {width: calc(100vw - 320px);z-index: 999}
 
 .channel-textarea.channel-textarea-disabled .channel-textarea-inner {opacity: 0.5;}
 
@@ -580,6 +590,15 @@
 .channel-members .member:hover > .avatar-small:after {opacity: .9;}
 
 .user-popout .header, #user-profile-modal .header {background: #1C1C1C !important;}
+#user-profile-modal .header:after {display: none;}
+#user-profile-modal .avatar-wrapper {background-color: transparent;}
+#user-profile-modal .header .header-info .header-info-inner .discord-tag {color: #d2d2d2;}
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {color: rgba(255,255,255,0.4);}
+#user-profile-modal .tab-bar .tab-bar-item.selected {color: #d2d2d2;}
+#user-profile-modal .tab-bar .tab-bar-item:not(.selected) {color: rgba(255,255,255,0.2);}
+#user-profile-modal .guilds .section .connected-accounts .connected-account {border: 1px solid #282828;}
+#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {color: #d2d2d2;}
+
 
 .popout header {background: #141414 !important;}
 .popout.popout-bottom header:before, .popout.popout-bottom-right header:before {border-bottom-color: #121314 !important;}
@@ -1054,8 +1073,11 @@ img::before {
 
 /*---DEV---*/
 
-.avatar-small[style*="106915215592923136"]+.member-inner .member-username .member-username-inner:after,
-.avatar-large[style*="106915215592923136"]+.comment .username-wrapper .user-name:after {
+.avatar-small[style*='106915215592923136'] + .member-inner .member-username-inner::after,
+.guild-settings-modal-members .avatar-small[style*='106915215592923136'] + .member-inner .member-username::after,
+.avatar-popout[style*='106915215592923136']::after,
+.avatar-profile[style*='106915215592923136']::after,
+.message-group .avatar-large[style*='106915215592923136'] + .comment .user-name::after {
     content: "DEV";
     background: #15843c;
     margin-left: 5px;
@@ -1063,6 +1085,12 @@ img::before {
     color: #fff;
     padding: 0px 3px;
     border-radius: 4px;
+}
+.avatar-profile[style*='106915215592923136']::after {
+	background: #15843c;
+	color: #fff!important;
+	margin-left: 12px!important;
+	content: "THEME DEV";
 }
 
 /*---/DEV---*/
