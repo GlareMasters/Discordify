@@ -21,11 +21,11 @@
 Note: The theme updates itself, so you only have to reload Discord at every update ;)
 
 #### **Previews:**
-![Preview-1](http://nirewen.s-ul.eu/kTTl0XIb.png)
+![Preview-1](http://nirewen.s-ul.eu/gX0Z18Q2.png)
 
-![Preview-2](http://nirewen.s-ul.eu/Sn2W873k.png)
+![Preview-2](http://nirewen.s-ul.eu/Iev6Ieax.png)
 
-![Preview-3](http://nirewen.s-ul.eu/hePva6Gy.png)
+![Preview-3](http://nirewen.s-ul.eu/37zYRkYx.png)
 
 ![Preview-4](http://nirewen.s-ul.eu/cl07P761.png)
 ([Stylish version](https://userstyles.org/styles/126680/discordify) only)
