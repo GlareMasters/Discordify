@@ -344,6 +344,10 @@
 .guilds-add {border: 1px solid #535559;}
 .guilds-add:hover {border: 1px solid #FFF; color: #535559;}
 
+.new-messages-indicator.new-messages-indicator-guild.new-messages-indicator-mention.bottom {
+	bottom: 71px !important;
+}
+
 .account {
 	background: #282828; 
 	height: 71px; 
@@ -360,7 +364,7 @@
 #voice-connection {
 	background: #121212;
 	border-top: 1px solid #282828;
-	border-bottom: 1px solid #282828;
+	border-bottom: 0px;
 }
 
 /*---/GUILDS---*/
@@ -385,18 +389,36 @@
 .emoji-item.selected {background-color: #181818 !important;}
 .emoji-picker .categories .item.selected {border-bottom: 4px solid #1ED760;}
 
-.highlight {
+.mention {
 	background-color: rgba(27, 193, 86, 0.1) !important;
 	color: #1ED760;
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-radius: 24px;
 }
-.highlight:hover {color: #1DB954 !important;}
+.mention:hover {color: #1DB954 !important;}
 
 .invite-button {background-color: #202020 !important;}
 .messages-popout-wrap {background: #202020 !important;}
 .messages-popout-wrap .header, .messages-popout-wrap .footer {background: #1C1C1C !important;}
+.search-filter, .search-answer {
+	background-color: #1C1C1C !important;
+}
+.search-results-wrap .scroller-wrap {
+	margin-bottom: 71px !important;
+}
+.search-results-wrap .search-header {background: #202020 !important;}
+.search-results-wrap {background: #111111 !important;}
+.search-results-wrap .channel-separator .channel-name {
+	background-color: #111111 !important;
+}
+.search-results-wrap .search-result .hit {
+	border: 0px !important;
+	background-color: #1C1C1C !important;
+	box-shadow: 0 0 10px 6px #111111 !important;
+}
+.search-results-wrap .search-result:before {background-image: linear-gradient(0deg,rgba(46,49,54,0) 0,#111111 100%) !important;}
+.search-results-wrap .search-result:after {background-image: linear-gradient(180deg,rgba(46,49,54,0) 0,#111111 100%) !important;}
 
 .messages-popout-wrap .messages-popout .message-group {
 	background: #282828 !important;
