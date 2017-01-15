@@ -1,0 +1,187 @@
+.guilds-wrapper{width: 180px;}
+.guilds-wrapper .scroller-wrap{width: 200px;}
+.guilds-wrapper .guilds {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;
+}
+
+.guilds-wrapper .guilds .guild {
+	margin-left: 8px;
+    margin-top: 8px;
+}
+
+.guilds-wrapper .guilds .guild.unread::before {
+	left: -2px;
+    top: 5px;
+    z-index:9000;
+}
+
+.guilds-wrapper .guilds .guild:first-child {
+    position: relative; 
+    left: 0;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#bd-pub-li {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#bd-pub-li #bd-pub-button {
+    position:absolute;
+    width: 100%;
+	text-align: center;
+}
+
+.guilds-wrapper .guilds .guild-separator {
+	position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.guilds-wrapper .guilds .friends-online {
+	position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.guilds-wrapper .guilds .guild.selected:before {
+    display: none;
+}
+
+.guilds-wrapper .guilds .guild {
+	position: relative;
+}
+
+.guilds-wrapper .guilds .dms {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.guilds-wrapper .guilds .dms .guild {
+    left: 0;
+}
+
+#voice-connection .btn-disconnect:hover:after
+{
+	background-image:url(https://s8.postimg.org/e1wa9d1k5/Disconnect_hover_icon.png);
+}
+
+
+#voice-connection
+{
+	background:#111111
+}
+
+
+#voice-connection .btn-group 
+{
+	border: 1px solid #181818;
+	background-color:#181818;
+}
+
+
+#voice-connection .btn 
+{
+	background:#181818;
+}
+
+.account .btn 
+{
+	background:#181818;
+}
+
+.channel-text .active
+{
+	background:#181818!important;
+}
+
+
+.channel-textarea-inner
+{
+	background:#181818!important;
+	border-color:#00FFFF!important;
+}
+
+.chat .new-messages-bar
+{
+	background-color:#ff0000;
+}
+
+
+.chat .new-messages-bar:hover
+{
+	background-color:#00ffff;
+}
+
+
+.chat .new-messages-bar button
+{
+	color:#000000;
+}
+
+.chat .new-messages-bar button:last-child
+{
+	color:#000000;
+}
+
+
+.chat .new-messages-bar button:hover
+{
+	color:#ffffff;
+}
+
+
+.message-group .comment .markup pre
+{
+	border-color:#ff0000 !important;
+}
+
+
+code.hljs
+{
+	background:#191919!important;
+}
+
+
+code.inline
+{
+	border-radius:9px!important;
+	background-color:#ff0000!important;
+}
+
+.tab-bar.SIDE .tab-bar-item.selected:before
+{
+	border-radius: 25px;
+	border: 5px solid;
+	padding: 10px; 
+	width: 145px;
+	height: 5px; 
+
+	animation-name: selectedcolors;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+   @keyframes selectedcolors {
+	0%		{color:	cyan;}
+	25%		{color:	transparent;}
+	50%		{color:	cyan;}
+	75%		{color:	transparent;}
+	100%	{color:	cyan;}
+}
+
+.account .btn,
+#voice-connection .btn {
+	border-radius: 30px;
+	border: 1px solid grey;
+	background-color: transparent;
+}
+.account .btn-group {border: 0px;}
+
+#voice-connection .btn-group {border: 0px;}
